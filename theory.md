@@ -592,6 +592,15 @@ Answer here
 
 ## Gradient boosting
 
+**What is boosting? ‍⭐️**
+
+Boosting is a method of training a model by combining predictions of a large number of simple models - _weak learners_. A weak learner is an algorithm that can be trained rather fast but with an error rate slighly better than random guessing. Each next learner reduces the error of the previous one by fitting to the current residuals instead of the original training dataset.
+
+The most common weak learner is a shallow decision tree with just a few terminal nodel.
+
+
+<br/>
+
 **What is gradient boosting trees? ‍⭐️**
 
 Answer here
