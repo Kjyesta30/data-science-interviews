@@ -594,9 +594,18 @@ Answer here
 
 **What is boosting? ‍⭐️**
 
-Boosting is a method of training a model by combining predictions of a large number of simple models - _weak learners_. A weak learner is an algorithm that can be trained rather fast but with an error rate slighly better than random guessing. Each next learner reduces the error of the previous one by fitting to the current residuals instead of the original training dataset.
+Boosting is a method of training a model by combining predictions of a several simple models - _weak learners_. A weak learner is an algorithm that can be trained rather fast but with an error rate slighly better than random guessing. They are trained in sequential order and each next learner tries to reduce the error of the previous one by fitting to the current residuals instead of the original training dataset.
 
-The most common weak learner is a shallow decision tree with just a few terminal nodel.
+The most common weak learner is a shallow decision tree with just a few terminal nodes.
+
+Algorithm pseudocode:
+
+ - Let $\hat{y} = 0, r_i = y_i$, for all *i* in the training dataset.
+ - For *b* = 1, ..., *number of trees*, repeat:
+	 -  $\hat{y}_b = \hat{f}(\bm{X}, r)$
+	 - $\hat{y}=\hat{y} + \lambda \hat{y}_b$
+	 - For *i* = 1, ..., *dataset size*, repeat:
+		 - $r_i = r_i - \lambda \hat{f}(x_i, r_i)$
 
 
 <br/>
