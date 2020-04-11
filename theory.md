@@ -598,14 +598,14 @@ Boosting is a method of training a model by combining predictions of a several s
 
 The most common weak learner is a shallow decision tree with just a few terminal nodes.
 
-Algorithm pseudocode:
+Boosting pseoudocode:
 
- - Let $\hat{y} = 0, r_i = y_i$, for all *i* in the training dataset.
+ - Let <img src="https://render.githubusercontent.com/render/math?math=\hat{y} = 0, r_i = y_i">, for all *i* in the training dataset.
  - For *b* = 1, ..., *number of trees*, repeat:
-	 -  $\hat{y}_b = \hat{f}(\bm{X}, r)$
-	 - $\hat{y}=\hat{y} + \lambda \hat{y}_b$
+	 - <img src="https://render.githubusercontent.com/render/math?math=\hat{y}_b = \hat{f}(\textbf{X}, r)">
+	 - <img src="https://render.githubusercontent.com/render/math?math=\hat{y}=\hat{y} + \lambda \hat{y}_b">
 	 - For *i* = 1, ..., *dataset size*, repeat:
-		 - $r_i = r_i - \lambda \hat{f}(x_i, r_i)$
+		 - <img src="https://render.githubusercontent.com/render/math?math=r_i = r_i - \lambda \hat{f}(x_i, r_i)">
 
 
 <br/>
