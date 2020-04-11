@@ -603,7 +603,7 @@ Boosting pseoudocode:
  - Let <img src="https://render.githubusercontent.com/render/math?math=\hat{y} = 0, r_i = y_i">, for all *i* in the training dataset.
  - For *b* = 1, ..., *number of trees*, repeat:
 	 - <img src="https://render.githubusercontent.com/render/math?math=\hat{y}_b = \hat{f}(\textbf{X}, r)">
-	 - <img src="https://render.githubusercontent.com/render/math?math=\hat{y}=\hat{y} + \lambda \hat{y}_b">
+    - <img src="https://render.githubusercontent.com/render/math?math=\hat{y} = \hat{y} %2B\lambda\hat{y}_b">
 	 - For *i* = 1, ..., *dataset size*, repeat:
 		 - <img src="https://render.githubusercontent.com/render/math?math=r_i = r_i - \lambda \hat{f}(x_i, r_i)">
 
