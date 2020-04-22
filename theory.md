@@ -608,7 +608,9 @@ In general, when you are adding correlated features, it means that they linearly
 
 **What is gradient boosting trees? ‍⭐️**
 
-Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+Boosting is a machine learning technique that _sequentially_ applyes weak learners to a modified version of the original training dataset. Weak learners predictions are slightly better than random guessing.
+
+The most frequently used learner is a decision tree with just a few terminal nodes. Each tree tries to fix an error of the previous step by fitting to the current residuals, rather than target variable **y**.
 
 <br/>
 
